@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>me.marioscalas</groupId>
+    <artifactId>my-spring-kata-parent</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <name>my-spring-kata-parent</name>
+    <description>Sample application for experimenting with Spring Boot and different related technologies.</description>
+    
+    <modules>
+        <module>kata-app</module>
+    </modules>
+    
+    <properties>
+        <java.version>22</java.version>
+        <spring-modulith.version>1.2.3</spring-modulith.version>
+    </properties>
+
+	<url>https://github.com/scalasm/my-spring-kata</url>
+	
+	<licenses>
+		<license/>
+	</licenses>
+	
+	<developers>
+		<developer>
+			<id>scalasm</id>
+			<name>Mario Scalas</name>
+			<email>mario.scalas at gmail.com</email>
+		</developer>
+	</developers>
+	
+	<scm>
+		<connection/>
+		<developerConnection/>
+		<tag/>
+		<url/>
+	</scm>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>3.3.3</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+</project>
